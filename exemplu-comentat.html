@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="exemplu-comentat.css">
+
+<html>
+    <title>It School curs 1 2024/2025</title>
+    <body>
+        <div class="teorie-html">
+            <div class="container">
+                <h1> Tipuri de titluri si selectori simpli</h1>
+    
+                <h1>Titlu cu h1</h1>
+                <h2>Titlu cu h2</h2>
+                <h3>Titlu cu h3</h3>
+                <h4>Titlu cu h4</h4>
+                <h5>Titlu cu h5</h5>
+                <h6>Titlu cu h6</h6>
+                <p>Paragraf - urmeaza un br</p>
+                <br>
+                <p>Paragraf - dupa un br</p>
+                <a href="https://ro.wikipedia.org/wiki/Pisic%C4%83_de_cas%C4%83">Link aici</a>
+                <br>
+                <strong>Text bolduit din HTML</strong>
+                <i>Text scris cu italic</i>
+                <mark>Text cu highlight</mark>
+                <br>
+                <p>Apa (H<sub>2</sub>O)</p>
+                <p>2<sup>3</sup> = 8</p>
+            </div>
+    
+            <!-- Acesta este un comentariu -->
+            <!-- 
+                Acesta este un alt comentariu
+                pe mai multe linii
+            -->
+            
+            <div class="container">
+                <h1>Butoane, inputuri si formular</h1>
+    
+                <button>Click me</button>
+    
+                <input type="text" name="username" placeholder="Numele tau...">
+                <textarea name="message" placeholder="Scrie aici..."></textarea>
+        
+                <br><br>
+        
+                <form action="/submit" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+    
+           <div class="container">
+                <h1> Liste si tabele</h1>
+                <div class="container__tabel">
+                    <table>
+                        <tr>
+                          <th>Company</th>
+                          <th>Contact</th>
+                          <th>Country</th>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Futterkiste</td>
+                          <td>Maria Anders</td>
+                          <td>Germany</td>
+                        </tr>
+                        <tr>
+                          <td>Centro comercial Moctezuma</td>
+                          <td>Francisco Chang</td>
+                          <td>Mexico</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="container__lista">
+                    <ul>
+                        <li>Fruit
+                          <ul>
+                            <li>Apple</li>
+                            <li>Banana</li>
+                          </ul>
+                        </li>
+                        <li>Vegetables
+                          <ul>
+                            <li>Carrot</li>
+                            <li>Broccoli</li>
+                          </ul>
+                        </li>
+                    </ul>           
+                </div>
+           </div>
+    
+           <div class="container">
+                <h1> Bara de navigare </h1>
+                <nav>
+                    <a href="/html/">HTML</a> |
+                    <a href="/css/">CSS</a> |
+                    <a href="/js/">JavaScript</a> |
+                    <a href="/jquery/">jQuery</a>
+                </nav>
+           </div>
+        </div>
+        
+        <div class="teorie-css">
+            <h1>Teorie CSS</h1>
+            <div class="teorie-css__stiluri-simple">
+                <h2>Stiluri simple</h2>
+                <p>Acesta este un p. Vreau ca toate p-urile mele sa fie albastre.</p>
+                <p>Acesta este un alt p</p>
+                <p class="red-p">Acesta este un p cu clasa red-p</p>
+                <p id="green-p">Acesta este un p cu id-ul green-p</p>
+            </div>
+            <div class="teorie-css__borduri">
+                <h2>Borduri</h2>
+                <p class="border">Acesta este un p cu bordura solida neagra</p>
+                <p class="dashed-border">Acesta este un p cu bordura dashed rosie</p>
+                <p class="dotted-border">Acesta este un p cu bordura dotted verde</p>
+                <p class="one-border">Acesta este un p cu bordura doar sus</p>
+                <p class="rounded-border">Acesta este un p cu bordura rotunjita</p>
+                <p class="one-corner-rounded-border">Acesta este un p cu bordura rotunjita doar intr-un colt</p>
+            </div>
+            <div class="teorie-css__margini-padding">
+                <h2>Margini si padding</h2>
+                <p class="margin">Acesta este un p cu margin 30px</p>
+                <p class="padding">Acesta este un p cu padding 30px</p>
+                <p class="margin padding">Acesta este un p cu margin 30px si padding 30px</p>
+            </div>
+            <div class="teorie-css__width-height">
+                <h2>Latime si inaltime</h2>
+                <p class="width">Acesta este un p cu latime 50%</p>
+                <p class="height">Acesta este un p cu inaltime 100px</p>
+            </div>
+            <div class="teorie-css__formatare-text">
+                <h2>Formatare text</h2>
+                <p class="text-cu-dimensiune">Aceste este un text cu dimensiunea de 24px</p>
+                <p class="text-colorat">Acesta este un p colorat cu roz</p>
+                <p class="text-cu-fundal">Acesta este un p cu fundal galben</p>
+                <p class="text-aliniat">Acesta este un p cu aliniere</p>
+                <p class="text-cu-inaltime-linie">Acesta este un paragraf in care spatierea dintre liniile paragrafului este de 3. Asta inseamna ca distanta dintre linii este de 3 ori marimea fontului</p>
+                <p class="text-cu-umbra">Acesta este un p cu umbra</p>
+                <p class="text-cu-font">Acesta este un p cu un alt font</p>
+                <p class="text-italic">Acesta este un p scris italic</p>
+                <p class="text-bold">Acesta este un p scris bold</p>
+            </div>
+            <div class="teorie-css__flexbox">
+                <h2>Flexbox</h2>
+                <div class="flexbox">
+                    <div class="flexbox__item item_1"></div>
+                    <div class="flexbox__item item_2"></div>
+                    <div class="flexbox__item item_3"></div>
+                </div>
+                <h2>Display block</h2>
+                <div class="display-block">
+                    <div class="display-block__item item_1"></div>
+                    <div class="display-block__item item_2"></div>
+                    <div class="display-block__item item_3"></div>
+                </div>
+            </div>
+            <div class="teorie-css__pozitii">
+                <h2>Pozitii</h2>
+                <p class="pozitie-relativa">Acesta este un p cu position relative</p>
+                <p class="pozitie-absoluta">Acesta este un p cu position absolute</p>
+                <p class="pozitie-sticky">Acesta este un p cu pozitie sticky</p>
+            </div>
+            <div class="teorie-css__z-index">
+                <h2>Z-index</h2>
+                <div class="z-index">
+                    <div class="patrat">
+                        <p>Z index mai mare</p>
+                    </div>
+                    <div class="cerc">
+                        <p>Z index mai mic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="teorie-css__overflow">
+                <h2>Overflow</h2>
+                <div class="overflow-hidden">
+                    <p>Acesta este un text care are overflow hidden intr-un container de dimensiuni mici.</p>
+                </div>
+                <div class="overflow-scroll">
+                    <p>Acesta este un text care are overflow scroll intr-un container de dimensiuni mici.</p>
+                </div>
+            </div>
+            <div class="teorie-css__pseudoclase">
+                <h2>Pseudoclase</h2>
+                <div class="pseudoclase">
+                    <p>Acesta este un text care are aplicate pseudoclase.</p>
+                    <a href="www.wikipedia.org">Link cu pseudoclase</a>
+                    <input type="text" placeholder="Input cu pseudoclase">
+                </div>
+            </div>
+            <div class="teorie-css__background">
+                <h2>Background</h2>
+                <div class="fundal">
+                    <div class="patrat culoare-de-fundal"></div>
+                    <div class="patrat imagine-de-fundal"></div>
+                    <div class="patrat opacitate"></div>
+                    <div class="patrat cu-box-shadow"></div>
+                </div>
+            </div>
+            <div class="teorie-css__folosirea-important">
+                <h2>Folosirea !important</h2>
+                <div class="folosirea-important">
+                    <h3>Aplicarea normala succesiva a stilurilor.</h3>
+                    <div class="normal">
+                        <p class="p-verde">Acesta este un p de culoare verde.</p>
+                        <p class="p-rosu">Acesta este un p de culoare rosie.</p>
+                    </div>
+                    <h3>Aplicarea lui !important primului p</h3>
+                    <div class="important">
+                        <p class="p-verde p-important">Acesta este un p de culoare verde.</p>
+                        <p class="p-rosu">Acesta este un p de culoare rosie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="teorie-css__transform">
+                <h2>Transform</h2>
+                <div class="transform">
+                    <div class="patrat translatare">
+                        <p>translatare</p>
+                    </div>
+                    <div class="patrat rotire">
+                        <p>rotire</p>
+                    </div>
+                    <div class="patrat rotireX">
+                        <p>rotireX</p>
+                    </div>
+                    <div class="patrat rotireY">
+                        <p>rotireY</p>
+                    </div>
+                    <div class="patrat rotireZ">
+                        <p>rotireZ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="teorie-css__tranzitii">
+                <div class="tranzitii">
+                    <h2>Tranzitii</h2>
+                    <div class="patrat tranzitie"></div>
+                </div>
+        </div>
+
+    </body>
+</html>

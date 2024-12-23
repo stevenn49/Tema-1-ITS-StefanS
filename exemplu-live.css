@@ -1,0 +1,118 @@
+p {
+    color: blue;
+}
+
+.container {
+    background-color: salmon;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    padding-left: 20px;
+    margin-top: 50px;
+    width: 500px;
+
+
+    h2 {
+        border: 6px dotted red;
+        border-color: pink !important;
+        border-color: yellowgreen;
+        border-color: turquoise;
+    }
+
+}
+
+/* .lista {
+    border-top-left-radius: 20px;
+    border: 2px solid pink;
+    border-bottom: 5px solid black;
+    border-bottom-color: red;
+} */
+
+.container2 {
+    background-color: yellow;
+}
+
+#id-ul-meu {
+    background-color: red;
+}
+
+.prima-clasa {
+    background-color: green;
+
+    &__a-doua-clasa {
+        color: blue;
+    }   
+}
+
+.mai-multe-patrate {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.patrat {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 200px; */
+    background-color: skyblue;
+    padding: 10px;
+    margin: 30px;
+    opacity: 0.5;
+
+    p {
+        color: white;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    h4 {
+        text-shadow: 3px 3px 10px red;
+    }
+}
+
+.pat1 {
+    background-color: red;
+}
+
+.pat2 {
+    background-color: green;
+}
+
+.pat3 {
+    background-color: blue;
+}
+
+.texteee {
+    display: flex;
+}
+
+.texte {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cerc1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute;
+    left: 50px;
+    top: 2200px;
+}
+
+.cerc2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: blue;
+    /* transform: translate(50px, 100px); */
+    transition: width 2s, height 10s;
+}
+
+.cerc2:hover {
+    width: 50px;
+    height: 50px;
+}

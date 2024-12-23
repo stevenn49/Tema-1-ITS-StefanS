@@ -1,0 +1,316 @@
+.teorie-css {
+    /* Aplicarea stilului pentru un selector */
+    p {
+        color: blue;
+    }
+
+    /* Aplicarea stilului pentru o clasa */
+    .red-p {
+        color: red;
+    }
+
+    /* Aplicarea stilului pentru un id */
+    #green-p {
+        color: green;
+    }
+
+    .border {
+        border: 3px solid black;
+    }
+
+    .dashed-border {
+        border: 3px dashed red;
+    }
+
+    .dotted-border {
+        border: 3px dotted green;
+    }
+
+    .one-border {
+        border-top: 3px solid blue;
+    }
+
+    .rounded-border {
+        border: 5px solid palevioletred;
+        border-radius: 10px;
+    }
+
+    .one-corner-rounded-border {
+        border: 5px solid palevioletred;
+        border-top-left-radius: 10px;
+    }
+
+    .margin {
+        margin: 30px;
+    }
+
+    .padding {
+        padding: 30px;
+    }
+
+    .width {
+        width: 50%;
+        border: 2px solid black;
+    }
+
+    .height {
+        height: 100px;
+        border: 2px solid black;
+    }
+
+    .text-cu-dimensiune {
+        font-size: 24px;
+    }
+
+    .text-colorat {
+        color: pink;
+    }
+
+    .text-cu-fundal {
+        background-color: yellow;
+    }
+
+    .text-aliniat {
+        text-align: center;
+    }
+
+    .text-cu-inaltime-linie {
+        line-height: 3;
+    }
+
+    .text-cu-umbra {
+        text-shadow: 3px 3px 10px red;
+    }
+
+    .text-cu-font {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .text-italic {
+        font-style: italic;
+    }
+
+    .text-bold {
+        font-weight: bold;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+
+        .flexbox__item {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+
+        .item_1 {
+            background-color: red;
+        }
+
+        .item_2 {
+            background-color: green;
+        }
+
+        .item_3 {
+            background-color: blue;
+        }
+    }
+
+    .display-block {
+        display: block;
+
+        .display-block__item {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+
+        .item_1 {
+            background-color: red;
+        }
+
+        .item_2 {
+            background-color: green;
+        }
+
+        .item_3 {
+            background-color: blue;
+        }
+    }
+
+    .pozitie-relativa {
+        position: relative;
+    }
+
+    .pozitie-absoluta {
+        position: absolute;
+        top: 3000px;
+    }
+
+    .pozitie-sticky {
+        position: sticky;
+        top: 3500px;
+    }
+
+    .z-index {
+        display: flex;
+        justify-content: flex-end;
+
+        .patrat {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+
+            position: relative;
+            z-index: 28;
+        }
+
+        .cerc {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            background-color: pink;
+
+            position: absolute;
+            top: 3200px;
+            z-index: 23;
+        }
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    };
+
+    .overflow-scroll {
+        overflow: scroll;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    };
+
+    .pseudoclase {
+        p {
+            color: black;
+        }
+
+        p:hover {
+            background-color: blue;
+        }
+
+        a:active {
+            background-color: green;
+        }
+
+        input:focus {
+            border-color: red;
+        }
+    }
+
+    .fundal {
+        display: flex;
+
+        .patrat {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+        }
+
+        .culoare-de-fundal {
+            background-color: yellow;
+        }
+
+        .imagine-de-fundal {
+            background-image: url('pisica.jpg');
+        }
+
+        .opacitate {
+            opacity: 0.3;
+            background-color: red;
+        }
+
+        .cu-box-shadow {
+            background-color: hotpink;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .folosirea-important {
+        .p-verde {
+            color: green;
+        }
+
+        .p-rosu {
+            color: red;
+        }
+
+        .p-important {
+            color: blue !important;
+        }
+    }
+
+    .transform {
+        display: flex;
+
+        .patrat {
+            background-color: hotpink;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            padding: 10px;
+
+            p {
+                color: white;
+            }
+        }
+
+        .translatare {
+            transform: translate(50px, 100px);
+        }
+
+        .rotire {
+            transform: rotate(45deg);
+        }
+
+        .rotireX {
+            transform: rotateX(45deg);
+        }
+
+        .rotireY {
+            transform: rotateY(45deg);
+        }
+
+        .rotireZ {
+            transform: rotateZ(45deg);
+        }
+    }
+
+    .tranzitii {
+        margin-top: 100px;
+
+        .patrat {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            transition: width 2s, height 2s, background-color 2s;
+        }
+
+        .patrat:hover {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 3px; 
+    }
+  }
+  
